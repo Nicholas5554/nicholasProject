@@ -73,7 +73,8 @@ body {
 }
 
 #location {
-    font-size: 35px;
+    font-size: 33px;
+    text-align: center;
 }
 
 #temperature,
