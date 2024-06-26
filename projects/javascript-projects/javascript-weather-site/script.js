@@ -42,6 +42,25 @@ searchButton.addEventListener('click', () => {
     }
 });
 
+searchButton.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+    }
+    const city = document.getElementById('search-city').value;
+    if (city) {
+        searchCity(city);
+        document.getElementById('search-city').value = '';
+    } else {
+        location.textContent = 'write a city name';
+        hideSun();
+        hideMoon();
+        temperature.textContent = '';
+        humidity.textContent = '';
+        feelsLike.textContent = '';
+        return;
+    }
+});
+
 const searchCity = (city) => {
     const apiFull = `${api}current.json?key=${key}&q=${city}`;
     fetch(apiFull)
