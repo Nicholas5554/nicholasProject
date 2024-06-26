@@ -1,5 +1,5 @@
 const key = '35e3c0c336b243dcb9d164709241406';
-const api = `http://api.weatherapi.com/v1/`;
+const api = `https://api.weatherapi.com/v1/`;
 
 const searchButton = document.getElementById('search-button');
 const weatherInfo = document.getElementById('weather-info');
@@ -27,25 +27,6 @@ const hideCloudRain = () => {
 const changeOfRain = false;
 
 searchButton.addEventListener('click', () => {
-    const city = document.getElementById('search-city').value;
-    if (city) {
-        searchCity(city);
-        document.getElementById('search-city').value = '';
-    } else {
-        location.textContent = 'write a city name';
-        hideSun();
-        hideMoon();
-        temperature.textContent = '';
-        humidity.textContent = '';
-        feelsLike.textContent = '';
-        return;
-    }
-});
-
-searchButton.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-        e.preventDefault();
-    }
     const city = document.getElementById('search-city').value;
     if (city) {
         searchCity(city);
