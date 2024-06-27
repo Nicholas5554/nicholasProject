@@ -1,4 +1,4 @@
-see the project at this link : https://ghost5554.github.io/nicholasProject/
+see the project at this link : https://nicholas5554.github.io/nicholasProject/
 
 Portfolio Project README
 Description
