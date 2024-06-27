@@ -466,6 +466,10 @@ input[type="checkbox"] {
         text-align: center;
     }
 
+    .top-strip {
+        gap: 30px;
+    }
+
     #about-me {
         height: 850px;
     }
@@ -602,6 +606,4 @@ input[type="checkbox"] {
         justify-content: space-between;
         align-items: center;
     }
-
-
 }
