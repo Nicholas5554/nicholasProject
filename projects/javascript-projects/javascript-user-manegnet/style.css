@@ -18,6 +18,7 @@ body {
 
 #register {
     display: flex;
+    direction: ltr;
     gap: 10px;
     align-items: end;
     justify-content: center;
@@ -76,6 +77,7 @@ input {
 #Table-row {
     width: 800px;
     display: flex;
+    direction: ltr;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
@@ -90,6 +92,7 @@ input {
 
 #userTableBody {
     width: 800px;
+    direction: ltr;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,8 +127,6 @@ td {
 
 #btn:hover {
     background-color: #F5E8C7;
-
-
 }
 
 #btn:active {
@@ -179,6 +180,7 @@ td {
 .edit-cell {
     width: 400px;
     font-size: 14px;
+    direction: ltr;
 }
 
 @media screen and (max-width: 600px) {
@@ -272,12 +274,12 @@ td {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        direction: ltr;
         width: 300px;
         height: 20px;
         font-size: 15px;
         margin-bottom: 10px;
         text-align: center;
-        counter-reset: list-number;
     }
 
     .logBtn {

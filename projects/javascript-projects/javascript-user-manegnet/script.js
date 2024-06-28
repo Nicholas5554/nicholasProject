@@ -51,9 +51,9 @@ function addUserToTable(userNew) {
     <td class="edit-cell" id="userLastRow">${userNew.lastName}</td>
     <td class="edit-cell" id="userEmailRow">${userNew.email}</td>
     <td class="edit-cell" id="userPasswordRow">${userNew.password}</td>
-    <td><button onclick="toggleLog(this)" class="logBtn">login</button></td>
+    <td><button onclick="toggleLog(this)" class="logBtn">Login</button></td>
     <td><button onclick="deleteUser(this)" class="delete-button">Delete</button></td>
-    <td><button onclick="changeUser(this)" class="changeBtn">change</button></td>
+    <td><button onclick="changeUser(this)" class="changeBtn">Change</button></td>
     `;
     userTableBody.appendChild(row);
 

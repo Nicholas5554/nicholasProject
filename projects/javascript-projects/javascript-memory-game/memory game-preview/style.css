@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     width: 100vw;
     position: fixed;
