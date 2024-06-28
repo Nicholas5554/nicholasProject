@@ -223,6 +223,7 @@ td {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        font-size: 13px;
     }
 
     input {
@@ -240,8 +241,8 @@ td {
 
     #btn {
         width: 100px;
-        height: 15px;
-        font-size: 13px;
+        height: 20px;
+        font-size: 11px;
         text-align: center;
         background-color: #222831;
         color: white;
@@ -251,8 +252,7 @@ td {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 410px;
-        /* background-color: magenta; */
+        width: 430px;
     }
 
     #Table-row {
@@ -282,18 +282,44 @@ td {
         text-align: center;
     }
 
-    .logBtn {
-        width: 60px;
-        font-size: 15px;
-    }
-
-    .delete-button {
-        width: 60px;
-        font-size: 15px;
-    }
-
+    .logBtn,
+    .delete-button,
     .changeBtn {
         width: 60px;
-        font-size: 15px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    #register {
+        font-size: 11px;
+    }
+
+    #main-container {
+        width: 390px;
+    }
+
+    #userTable {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+
+    #register {
+        font-size: 11px;
+    }
+
+    #main-container {
+        width: 380px;
+    }
+
+    #userTable {
+        width: 370px;
+    }
+
+    #userTableBody {
+        width: 250px;
     }
 }
