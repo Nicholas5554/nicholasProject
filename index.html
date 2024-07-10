@@ -2,287 +2,385 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&display=swap"
-        rel="stylesheet">
-    <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="./assets/img/logos/minimalistic-logo.jpeg" rel="icon">
+  <link href="./assets/img/logos/minimalistic-logo.jpeg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
 
-<body>
+<body class="index-page">
 
-    <!-- header part -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-    <header>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="./assets/img/logos/page-logo.jpeg" alt="">
+        <h1 class="sitename">my portfolio</h1>
+      </a>
 
-        <label for="box-toggle" id="hamburger">&#9776;</label>
-        <input type="checkbox" id="box-toggle">
-
-        <nav>
-            <a href="#portfolio">MAIN</a>
-            <a href="#about-me">ABOUT</a>
-            <a href="#section-con">GALLERY</a>
-            <a href="#contact-con">CONTACT</a>
-        </nav>
-    </header>
-
-    <div id="portfolio">
-        <h1>תיק עבודות</h1>
-        <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום הדפוס, ההדפסה
-            והפרסום. למשל: לורםלורם איפסום או בקיצור לי.</p>
-    </div>
-
-    <div class="top-strip">
-
-        <div class="tool">
-            <img src="./images/html-5.png" alt="">
-        </div>
-
-        <div class="tool">
-            <img src="./images/css-3.png" alt="">
-        </div>
-
-        <div class="tool">
-            <img src="./images/sass.png" alt="">
-        </div>
-
-        <div class="tool">
-            <img src="./images/bootsrap.png" alt="">
-        </div>
-
-        <div class="tool">
-            <img src="./images/js.png" alt="">
-        </div>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
     </div>
+  </header>
 
-    <!-- main page part -->
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
 
-    <main>
+      <!--  <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in"> -->
 
-        <div id="about-me">
-            <div class="main-me">
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up"
+        data-aos-delay="100">
+        <h2 id="big-title">hi</h2>
+        <!--   <h2>i'm Nikolas</h2> -->
+        <p><span class="typed" data-typed-items="i'm a web developer"></span></p>
+      </div>
 
-                <div class="photo-me">
-                    <img src="./images/profile-image-new.jpg" alt="">
-                </div>
+    </section><!-- /Hero Section -->
 
-                <h1>קצת עלי</h1>
-                <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום הדפוס,
-                    ההדפסה והפרסום. למשל: לורםלורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות . לורם איפסום או
-                    בקיצור ליפסוםהמשמש.לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות . משמש “ממלא מקום” בעת
-                    עריכה, בתחום הדפוס, ההדפסה והפרסום. למשל: לורםלורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר
-                    משמעות . לורם איפסום או בקיצור ליפסוםהמשמש לורם איפסום או בקיצור ליפסום, הוא מלל מקובל.
-                    המשמש.ל</p>
-                <a href="./images/לושניקוב ניקולס.pdf" download="cv">
-                    <div class="button-me">להורדת קורות חיים</div>
-                </a>
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="./assets/img/logos/minimalistic-logo.jpeg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Nikolas Lushnikov</span></p>
+                <p><strong>Profile: </strong> <span>full stack developer</span></p>
+                <p><strong>Email: </strong> <span>nick555310@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>054-914-5172</span></p>
+              </div>
             </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span><img class="logo-skill" src="./assets/img/icons/html-5.png"
+                      alt="html-5"></span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>
+                    <img class="logo-skill" src="./assets/img/icons/css-3.png" alt="css-3">
+                  </span>
+                  <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span><img class="logo-skill" src="./assets/img/icons/bootsrap.png"
+                      alt="bootstrap"></span>
+                  <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span><img class="logo-skill" src="./assets/img/icons/sass.png" alt="sass"></span>
+                  <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span><img class="logo-skill" src="./assets/img/icons/js.png" alt="js"></span>
+                  <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
+                imperdiet et, porttitor
+                at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
+                porttitor accumsan tincidunt.
+              </p>
+              <p>
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
+                porttitor volutpat. Vestibulum
+                ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+              </p>
+              <p>
+                Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                Nulla porttitor accumsan
+                tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div id="section-con">
+      </div>
 
-            <div class="galley-title">
-                <h1>עבודות נבחרות</h1>
-                <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום.</p>
+    </section><!-- /About Section -->
+
+    <!-- projects Section -->
+    <section id="projects" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>projects (land pages)</h2>
+        <p>in the projects bellow i have used a set of tools and technologies to create them</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <a href="./projects/landing-pages-htmlAndCss/gradientLand/gradient-preview/portfolio-details.html"
+                class="stretched-link">
+                <h3>gradiant land page</h3>
+              </a>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
+                tempore et consequatur.</p>
+              <img src="./assets/img/landing-pages-images/gradientLand.png" alt="" class="project-img">
             </div>
+          </div><!-- End Service Item -->
 
-            <section class="galley">
-
-                <div class="card">
-                    <div class="img"></div>
-                    <h3>Gradiant land page</h3>
-                    <a href="./projects/landing-pages-htmlAndCss/gradientLand/gradient-preview/index.html">
-                        <input type="button" value="לפרוייקט">
-                    </a>
-                </div>
-
-                <div class="card">
-                    <div class="img2"></div>
-                    <h3>Pink land page</h3>
-                    <a href="./projects/landing-pages-htmlAndCss/pinkPageLand/pinkPageLand-preview/index.html">
-                        <input type="button" value="לפרוייקט">
-                    </a>
-                </div>
-
-                <div class="card">
-                    <div class="img3"></div>
-                    <h3>Coffee land</h3>
-                    <a href="./projects/landing-pages-htmlAndCss/coffeeLand/coffeeLand-preview/index.html">
-                        <input type="button" value="לפרוייקט">
-                    </a>
-                </div>
-
-                <div class="card">
-                    <div class="img4"></div>
-                    <h3>Yellow land</h3>
-                    <a href="./projects/landing-pages-htmlAndCss/yellowLand/yellowLand-preview/index.html">
-                        <input type="button" value="לפרוייקט">
-                    </a>
-                </div>
-
-                <div class="card">
-                    <div class="img5"></div>
-                    <h3>Dark land page</h3>
-                    <a href="./projects/landing-pages-htmlAndCss/spaceLand/spaceLand-preview/index.html">
-                        <input type="button" value="לפרוייקט">
-                    </a>
-                </div>
-
-                <div class="card">
-                    <div class="img6"></div>
-                    <h3>Blue box land page</h3>
-                    <a href="./projects/landing-pages-htmlAndCss/boxLand/boxland-preview/index.html">
-                        <input type="button" value="לפרוייקט">
-                    </a>
-                </div>
-
-            </section>
-
-            <!-- the javascript work galley -->
-
-            <h1 id="javascript-projects-title">Javascript Projects</h1>
-
-            <section class="galley">
-
-                <div class="card">
-                    <div class="img7"></div>
-                    <h3>Memory game</h3>
-                    <a href="./projects/javascript-projects/javascript-memory-game/memory game-preview/index.html">
-                        <input type="button" value="לפרוייקט">
-                    </a>
-                </div>
-
-                <div class="card">
-                    <div class="img8"></div>
-                    <h3>Studying calculus</h3>
-                    <a
-                        href="./projects/javascript-projects/javascript-studying-calculus/studying-calculus-preview/index.html">
-                        <input type="button" value="לפרוייקט">
-                    </a>
-                </div>
-
-                <div class="card">
-                    <div class="img9"></div>
-                    <h3>User management</h3>
-                    <a href="./projects/javascript-projects/javascript-user-manegnet/userManegnet-preview/index.html">
-                        <input type="button" value="לפרוייקט">
-                    </a>
-                </div>
-
-                <div class="card">
-                    <div class="img10"></div>
-                    <h3>Pong</h3>
-                    <a href="./projects/javascript-projects/javascript-pong/pong-preview/index.html">
-                        <input type="button" value="לפרוייקט">
-                    </a>
-                </div>
-
-                <div class="card">
-                    <div class="img11"></div>
-                    <h3>Weather site</h3>
-                    <a href="./projects/javascript-projects/javascript-weather-site/weather-preview/index.html">
-                        <input type="button" value="לפרוייקט">
-                    </a>
-                </div>
-
-                <div class="card">
-                    <div class="img12"></div>
-                    <h3>Expenses</h3>
-                    <a href="./projects/javascript-projects/javascript-expenses/expenses-preview/index.html">
-                        <input type="button" value="לפרוייקט">
-                    </a>
-                </div>
-
-            </section>
-
-        </div>
-
-        <!-- contact area -->
-
-        <div id="contact-con">
-
-            <div class="form-img">
-                <img src="./images/Rectangle 41.png" alt="">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <a href="#" class="stretched-link">
+                <h3>pink landing page</h3>
+              </a>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
+                nesciunt dolorem.</p>
+              <img src="./assets/img/landing-pages-images/pinkPageLand.png" alt="" class="project-img">
             </div>
+          </div><!-- End Service Item -->
 
-            <form>
-
-                <div class="form-title">
-                    <h1>צור קשר</h1>
-                    <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
-                </div>
-
-                <div class="form-item">
-                    <label for="name">שם מלא</label>
-                    <input type="text" required>
-                </div>
-
-                <div class="form-item">
-                    <label for="email">דוא״ל</label>
-                    <input type="text" required>
-                </div>
-
-                <div class="form-item">
-                    <label for="phone">טלפון</label>
-                    <input type="text" required>
-                </div>
-
-                <div class="form-item">
-                    <label for="subject">תוכן ההודעה</label>
-                    <input type="text" id="subject">
-                </div>
-
-                <div class="form-item">
-                    <input type="submit" value="שׁליחה">
-                </div>
-
-            </form>
-        </div>
-
-    </main>
-
-    <footer>
-
-        <div class="icon-con">
-
-            <div class="icon">
-                <img src="./images/Icon simple-email.png" alt="">
-                <p>nick555310@gmail.com</p>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <a href="#" class="stretched-link">
+                <h3>blue box landing page</h3>
+              </a>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
+                eos earum corrupti.</p>
+              <img src="./assets/img/landing-pages-images/boxLand.png" alt="" class="project-img">
             </div>
+          </div><!-- End Service Item -->
 
-            <div class="icon">
-                <img src="./images/Icon simple-whatsapp.png" alt="">
-                <p>0549145172</p>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <a href="#" class="stretched-link">
+                <h3>coffee landing page</h3>
+              </a>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
+                adipisci neque.</p>
+              <img src="./assets/img/landing-pages-images/coffeeLand.png" alt="" class="project-img">
+              <a href="#" class="stretched-link"></a>
             </div>
+          </div><!-- End Service Item -->
 
-            <div class="icon">
-                <img src="./images/Icon simple-phone.png" alt="">
-                <p>0549145172</p>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <a href="#" class="stretched-link">
+                <h3>Velit Doloremque</h3>
+              </a>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem
+                alias eius labore.</p>
+              <img src="./assets/img/landing-pages-images/spaceLand.png" alt="" class="project-img">
+              <a href="#" class="stretched-link"></a>
             </div>
+          </div><!-- End Service Item -->
 
-            <div class="icon">
-                <img src="./images/Icon awesome-linkedin-in.png" alt="">
-                <p> Nikolas Lushnikov </p>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <a href="#" class="stretched-link">
+                <h3>Dolori Architecto</h3>
+              </a>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti
+                recusandae ducimus enim.</p>
+              <img src="./assets/img/landing-pages-images/yellowLand.png" alt="" class="project-img">
+              <a href="#" class="stretched-link"></a>
             </div>
-
-            <div class="icon">
-                <img src="./images/Icon awesome-facebook-f.png" alt="">
-                <p> Nicholas Lushnikov </p>
-            </div>
+          </div><!-- End Service Item -->
 
         </div>
 
-    </footer>
+      </div>
 
-    <div id="footer">
-        <p>Nicholas</p>
-        <p>all rights are reserved</p>
+    </section><!-- /projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Me</h3>
+                  <p>0549145172</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Me</h3>
+                  <p>nick555310@gmail.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Nikolas Lushnikov</strong> <span>All Rights
+            Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
     </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="./assets/js/main.js"></script>
 
 </body>
 
