@@ -759,6 +759,20 @@ section,
   height: 23px;
 }
 
+.logo-container {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-skill-projects {
+  width: 75px;
+  height: 75px;
+}
+
 .logo-skill .about .skills-content h5 {
   font-size: 18px;
   font-weight: 700;
@@ -935,6 +949,7 @@ section,
 .project-img {
   width: 90%;
   height: 200px;
+  object-fit: cover;
 }
 
 @media (min-width: 1365px) {
@@ -2328,7 +2343,8 @@ section,
 }
 
 .section-title p {
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 /*--------------------------------------------------------------
