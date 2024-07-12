@@ -948,8 +948,11 @@ section,
 
 .project-img {
   width: 90%;
-  height: 200px;
+  height: 170px;
   object-fit: cover;
+  box-shadow: 1px -1px 37px -8px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 1px -1px 37px -8px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 1px -1px 37px -8px rgba(0, 0, 0, 0.72);
 }
 
 @media (min-width: 1365px) {
