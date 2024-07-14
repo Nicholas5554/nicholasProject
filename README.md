@@ -1,3 +1,4 @@
+
 see the project at this link : https://nicholas5554.github.io/nicholasProject/
 
 Welcome to my portfolio! This collection showcases my skills in web development using HTML, CSS with Sass, and Bootstrap, along with JavaScript. Each project demonstrates a unique aspect of my capabilities and creativity.
@@ -77,4 +78,3 @@ Highlights: Demonstrates API integration and real-time data display.
 Description: A personal finance tracker to manage expenses.
 Technologies: HTML, CSS, JavaScript
 Highlights: Provides data visualization and dynamic expense tracking.
-
