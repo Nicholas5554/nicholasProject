@@ -78,30 +78,3 @@ const searchCity = (city) => {
             console.log('typo error try again', err);
         });
 };
-
-
-
-
-/* export { searchCity } */
-
-
-
-
-/* const search = document.getElementById('search-button');
-
-const searchCity = async () => {
-    search.addEventListener('click', async () => {
-        const key = '35e3c0c336b243dcb9d164709241406';
-        const searchBar = document.getElementById('search-city');
-        const city = document.getElementById('search-city').value;
-        if (city === '') {
-            return;
-        } else {
-            searchBar.value = '';
-        }
-        const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}`);
-        const weather = await res.json();
-        console.log(weather);
-        return weather;
-    });
-} */

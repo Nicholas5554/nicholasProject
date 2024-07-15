@@ -28,7 +28,8 @@ function checkUser() {
     let answer = document.getElementById('answer-area').value;
     let mathProblem = document.getElementById('problem-area').innerHTML;
 
-    if (document.getElementById('answer-area').value == ' ') {
+    if (document.getElementById('answer-area').value == '') {
+        isAnswerRight() == false;
         document.getElementById('score').innerHTML = `answer requaired`;
     }
 
