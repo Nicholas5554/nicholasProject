@@ -897,6 +897,15 @@ section,
   border: 2px solid var(--accent-color);
 }
 
+#cv-btn {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1555,6 +1564,7 @@ section,
 }
 
 .portfolio-details .portfolio-description p {
+  font-size: 20px;
   padding: 0;
 }
 
