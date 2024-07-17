@@ -1,47 +1,70 @@
+
 let difficulty;
+let points = 0;
+let score = document.getElementById('score');
+const answerArea = document.getElementById('answer-area');
+const problemArea = document.getElementById('problem-area');
+let isMathProblemShow = false;
+let isDifficultyPicked = false;
+let generatedProblems = new Set();
 
-function randomNum(min, max) {
-    let ranOne = Math.floor(Math.random() * (max - min + 1)) + min;
-    let ranTwo = Math.floor(Math.random() * (max - min + 1)) + min;
 
-    let operators = ['+', '-', '*', '/'];
-    let operator = operators[Math.floor(Math.random() * operators.length)];
+const randomNum = (min, max) => {
 
-    let result = `${ranOne} ${operator} ${ranTwo}`;
+    let result;
+    do {
+        let ranOne = Math.floor(Math.random() * (max - min + 1)) + min;
+        let ranTwo = Math.floor(Math.random() * (max - min + 1)) + min;
 
-    if (Number.isInteger(eval(result)) == false || eval(result) < 0) {
-        randomNum();
-    }
+        let operators = ['+', '-', '*', '/'];
+        let operator = operators[Math.floor(Math.random() * operators.length)];
 
-    document.getElementById('problem-area').innerHTML = result;
+        result = `${ranOne} ${operator} ${ranTwo}`;
+
+    } while (!Number.isInteger(eval(result)) || eval(result) < 0 || generatedProblems.has(result));
+
+    generatedProblems.add(result);
+    problemArea.innerHTML = result;
+    isMathProblemShow = true;
     return result;
 }
 
 const isAnswerRight = (answer, mathProblem) => {
     let rightAnswer = eval(mathProblem);
-    return parseFloat(answer) === rightAnswer;
+    if (answerArea.value == ' ') {
+        return;
+    } else {
+        return parseFloat(answer) === rightAnswer;
+    }
 }
 
-let points = 0;
+const checkUser = () => {
 
-function checkUser() {
-    let answer = document.getElementById('answer-area').value;
-    let mathProblem = document.getElementById('problem-area').innerHTML;
-
-    if (document.getElementById('answer-area').value == ' ') {
-        document.getElementById('score').innerHTML = `answer requaired`;
+    if (!isMathProblemShow) {
+        score.innerHTML = `answer requaired`;
+        return;
     }
 
+    if (answerArea.value == '') {
+        score.innerHTML = `answer required`;
+        return;
+    }
+
+    const mathProblem = document.getElementById('problem-area').innerHTML;
+    const answer = answerArea.value;
+
     if (isAnswerRight(answer, mathProblem)) {
+        isMathProblemShow = true;
         points++;
-        document.getElementById('score').innerHTML = `you got a point!, nice you have ${points} points`;
+        score.innerHTML = `you got a point!, nice you have ${points} points`;
     }
 
     else if (isAnswerRight(answer, mathProblem) == false) {
-        document.getElementById('score').innerHTML = `not the right one try again, you have ${points} points`;
+        isMathProblemShow = true;
+        score.innerHTML = `not the right one try again, you have ${points} points`;
     }
 
-    document.getElementById('answer-area').value = ' ';
+    answerArea.value = '';
 
     exerciseHistory(answer, mathProblem);
 
@@ -87,7 +110,7 @@ const difficultyPicker = () => {
     });
 }
 
-function exerciseHistory(answer, mathProblem) {
+const exerciseHistory = (answer, mathProblem) => {
     const table = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
     const row = table.insertRow(0);
     const exercise = row.insertCell(0);
