@@ -41,7 +41,7 @@ const isAnswerRight = (answer, mathProblem) => {
 const checkUser = () => {
 
     if (!isMathProblemShow) {
-        score.innerHTML = `answer requaired`;
+        score.innerHTML = `please pick a level`;
         return;
     }
 
