@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #aaaaaa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #969696;
+}
+
 html {
     overflow-x: hidden;
 }
