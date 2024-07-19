@@ -38,12 +38,12 @@ form.addEventListener('submit', (event) => {
 
     const userJSON = JSON.stringify(userNew);
 
-    sessionStorage.setItem('userData', userJSON);
+    localStorage.setItem('userData', userJSON);
 
     addUserToTable(userNew);
 });
 
-function addUserToTable(userNew) {
+const addUserToTable = (userNew) => {
     const row = document.createElement('tr');
     row.id = userNew.password;
     row.innerHTML = `
@@ -62,27 +62,9 @@ function addUserToTable(userNew) {
     document.querySelector('#lname').value = '';
     document.querySelector('#email').value = '';
     document.querySelector('#password').value = '';
-
-    const editCells = row.querySelectorAll('.edit-cell');
-    editCells.forEach(cell => {
-        cell.addEventListener('click', () => {
-            editCell(cell);
-        });
-    });
 }
 
-let change = false;
-
-const editCell = (cell) => {
-    if (change == true) {
-        cell.contentEditable = true;
-        cell.focus();
-    } else {
-        cell.contentEditable = false;
-    }
-}
-
-function deleteUser(button) {
+const deleteUser = (button) => {
     const row = button.closest('tr');
     const password = row.id;
     if (isLoggedIn == false) {
@@ -108,7 +90,30 @@ const toggleLog = (button) => {
     }
 }
 
+let change = false;
+
+const editCell = (cell) => {
+    if (change == true) {
+        cell.contentEditable = true;
+        cell.focus();
+    } else {
+        cell.contentEditable = false;
+    }
+}
+
 const changeUser = (button) => {
+    const row = button.closest('tr');
+    const cells = row.querySelectorAll('.edit-cell');
+
+    cells.forEach(cell => {
+        cell.contentEditable = !change;
+        if (change) {
+            cell.classList.add('editable-cell');
+        } else {
+            cell.classList.remove('editable-cell');
+        }
+    });
+
     if (change) {
         button.innerHTML = 'change';
         change = false;
