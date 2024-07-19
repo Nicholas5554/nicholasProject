@@ -61,6 +61,7 @@ body {
 input {
     font-size: 17px;
     font-family: Poppins;
+    width: 300px;
 }
 
 #userTable {
@@ -182,6 +183,48 @@ td {
     font-size: 14px;
     direction: ltr;
 }
+
+@media screen and (min-width : 1700px) {
+
+    #userTableBody {
+        width: 980px;
+        direction: ltr;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-bottom: 2px solid #EEEEEE;
+    }
+
+    #userTable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1650px;
+    }
+
+    #Table-row {
+        width: 1000px;
+        gap: 20px;
+    }
+
+    #first-name-row {
+        width: 140px;
+    }
+
+    #last-name-row {
+        width: 140px;
+    }
+
+    #email-row {
+        width: 200px;
+    }
+
+    #password-row {
+        width: 150px;
+    }
+}
+
 
 @media screen and (max-width: 600px) {
 
