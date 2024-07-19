@@ -80,14 +80,14 @@ input {
     display: flex;
     direction: ltr;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     border-bottom: 2px solid black;
     font-size: 15px;
 }
 
 #email-row {
-    width: 200px;
+    width: 170px;
 }
 
 
