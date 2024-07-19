@@ -64,17 +64,8 @@ const addUserToTable = (userNew) => {
     document.querySelector('#password').value = '';
 }
 
-const deleteUser = (button) => {
-    const row = button.closest('tr');
-    const password = row.id;
-    if (isLoggedIn == false) {
-        row.remove();
-    }
 
-    const userData = JSON.parse(sessionStorage.getItem('userData'));
-    const updatedUserData = userData.filter(userNew => userNew.password !== password);
-    sessionStorage.setItem(userData, JSON.stringify(updatedUserData));
-}
+// LOGGING THE USER IN OR OUT 
 
 let isLoggedIn = false;
 
@@ -90,16 +81,24 @@ const toggleLog = (button) => {
     }
 }
 
-let change = false;
+// DELETING THE USER FROM THE TABLE AND THE LOCAL STORAGE
 
-const editCell = (cell) => {
-    if (change == true) {
-        cell.contentEditable = true;
-        cell.focus();
-    } else {
-        cell.contentEditable = false;
+const deleteUser = (button) => {
+    const row = button.closest('tr');
+    const password = row.id;
+    if (isLoggedIn == false) {
+        row.remove();
     }
+
+    const userData = JSON.parse(sessionStorage.getItem('userData'));
+    const updatedUserData = userData.filter(userNew => userNew.password !== password);
+    sessionStorage.setItem(userData, JSON.stringify(updatedUserData));
 }
+
+
+// LETTING THE USER CHANGE THE CELLS OF A SPECIFIC ROW
+
+let change = false;
 
 const changeUser = (button) => {
     const row = button.closest('tr');
@@ -108,6 +107,7 @@ const changeUser = (button) => {
     cells.forEach(cell => {
         cell.contentEditable = !change;
         if (change) {
+            cell.focus();
             cell.classList.add('editable-cell');
         } else {
             cell.classList.remove('editable-cell');
