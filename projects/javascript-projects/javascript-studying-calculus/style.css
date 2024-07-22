@@ -143,6 +143,14 @@ body {
     cursor: pointer;
 }
 
+#userChack:hover {
+    background-color: #2ec919;
+}
+
+#userChack:active {
+    background-color: #27ac16;
+}
+
 #answer-area {
     width: 200px;
     height: 55px;
