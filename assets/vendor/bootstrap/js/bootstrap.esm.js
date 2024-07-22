@@ -1,20 +1,5 @@
-/*!
-  * Bootstrap v5.3.3 (https://getbootstrap.com/)
-  * Copyright 2011-2024 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-  */
+
 import * as Popper from '@popperjs/core';
-
-/**
- * --------------------------------------------------------------------------
- * Bootstrap dom/data.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- * --------------------------------------------------------------------------
- */
-
-/**
- * Constants
- */
 
 const elementMap = new Map();
 const Data = {
@@ -24,8 +9,7 @@ const Data = {
     }
     const instanceMap = elementMap.get(element);
 
-    // make it clear we only want one instance per element
-    // can be removed later when multiple key/instances are fine to be used
+
     if (!instanceMap.has(key) && instanceMap.size !== 0) {
       // eslint-disable-next-line no-console
       console.error(`Bootstrap doesn't allow more than one instance per element. Bound instance: ${Array.from(instanceMap.keys())[0]}.`);
@@ -52,13 +36,6 @@ const Data = {
     }
   }
 };
-
-/**
- * --------------------------------------------------------------------------
- * Bootstrap util/index.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- * --------------------------------------------------------------------------
- */
 
 const MAX_UID = 1000000;
 const MILLISECONDS_MULTIPLIER = 1000;
@@ -193,7 +170,7 @@ const findShadowRoot = element => {
   }
   return findShadowRoot(element.parentNode);
 };
-const noop = () => {};
+const noop = () => { };
 
 /**
  * Trick to restart an element's animation
