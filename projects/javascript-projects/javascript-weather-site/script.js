@@ -1,4 +1,4 @@
-const key = '35e3c0c336b243dcb9d164709241406';
+const key = '*';
 const api = `https://api.weatherapi.com/v1/`;
 
 const searchButton = document.getElementById('search-button');
